@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box ;
+}
+
+:root {
+    /* primary colors */
+    --bright-red: hsl(12, 88%, 59%) ;
+    --Dark-Blue: hsl(228, 39%, 23%) ;
+
+    /* neutral colors */
+   --Dark-Grayish-Blue: hsl(227, 12%, 61%) ;
+    --Very-Dark-Blue: hsl(233, 12%, 13%) ;
+    --Very-Pale-Red: hsl(13, 100%, 96%) ;
+    --Very-Light-Gray: hsl(0, 0%, 98%) ;
+
+    /* font sizes */
+    ---font-size:16px;
+
+    /* font weight */
+
+    --weight1: 400;
+    --weight2: 500;
+    --weight: 700;
+}
+
+nav{
+/* border: 3px solid black; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin: 40px 70px 100px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+#get-started{
+background-color: var(--bright-red);
+padding: 5px 15px;
+border-radius: 20px;
+border: none;
+}
