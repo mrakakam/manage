@@ -152,3 +152,68 @@ font-size: 18px;
 color: var(--Dark-Grayish-Blue);
 font-size: 18px;
 }
+
+#section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    
+    }
+
+    #section-3 h1{
+       color: var(--Dark-Blue);
+        font-size: 40px;
+    }
+
+.section-3-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card-helpers{
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-one-img,
+.card-two-img,
+.card-three-img{
+    width: 30%;
+}
+
+.section-3-h3-helper{
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+}
+
+#get-started-inverse{
+background-color: fff;
+padding: 5px 15px;
+border-radius: 40px;
+border: none;
+color: var(--bright-red);
+}
+
+#section-4{
+    background-color: var(--bright-red);
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(resources/images/bg-simplify-section-desktop.svg);
+    margin: 50px 0 0 0;
+    padding: 50px 130px 50px 130px;
+}
+#section-4 h1{
+    color: #fff;
+}
