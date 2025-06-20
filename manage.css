@@ -50,6 +50,13 @@ border: none;
 color: var(--Very-Pale-Red);
 }
 
+#get-started:hover {
+    cursor:pointer;
+    background-color:orange;
+    transition: ease-in-out 0.5s;
+    scale: 1.1;
+}
+
 #section-1{
     /* border: 2px solid black; */
     display: flex;
@@ -200,10 +207,10 @@ font-size: 18px;
 }
 
 #get-started-inverse{
-background-color: fff;
+background-color: #fff;
 padding: 5px 15px;
 border-radius: 40px;
-border: none;
+border:none;
 color: var(--bright-red);
 }
 
@@ -303,24 +310,29 @@ footer{
     border-radius: 20px;
     padding: 10px 25px;
     color: var(--Very-Pale-Red);
+    border: none;
+}
+
+#go:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    scale: 1.1;
 }
 
 /* this belongs to active-states */
 
 .list li a:hover{
     color: var(--Dark-Grayish-Blue);
+    transition: 0.5s;
+    
 }
 
-#get-started :hover {
-    cursor: pointer;
-    background-color: orange;
-    transition: ease-in-out 0.5s;
-    scale: 1.1;
-}
 
-#get-started-inverse {
+
+#get-started-inverse:hover {
      cursor: pointer;
-    background-color: orange;
+    /* background-color: orange; */
     transition: ease-in-out 0.5s;
     scale: 1.1;
+   
 }
