@@ -305,6 +305,10 @@ footer{
     width: 80%;
 }
 
+.top-copy{
+    display: none;
+}
+
 #go {
     background-color: var(--bright-red);
     border-radius: 20px;
@@ -327,6 +331,11 @@ footer{
     
 }
 
+.list a{
+    text-decoration: none;
+    
+}
+
 
 
 #get-started-inverse:hover {
@@ -335,4 +344,114 @@ footer{
     transition: ease-in-out 0.5s;
     scale: 1.1;
    
+}
+
+/* medium mobile phones  */
+
+@media (min-width:480px) and (max-width:767px) {
+    
+}
+
+        /* tablet potrait sizes */
+
+@media (min-width:768px) and (max-width:1024px) {
+    
+}
+        /* mobile phones */
+
+@media (min-width:320px) and (max-width:479px) {
+
+    nav {
+        margin: 30px 20px 70px;
+        justify-content: space-between;
+    }
+
+     .buttons {
+        display: block;
+    }
+
+    nav .nav-button {
+        display: none;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid green; */
+        padding: 50px;
+    }
+   #section-1 {
+        flex-direction: column-reverse;
+        margin: 20px 10px 80px;
+        width: 100%;
+    }
+
+     .section-1-div-img img {
+        width: 100%;
+        
+    }
+
+     .section-1-div-text  {
+        /* border: 2px solid black; */
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section-1-div-text h1 {
+         font-size: 45px;
+        
+    }
+
+    .section-1-div-text p {
+        
+        font-size: 19px;
+    }
+
+     #get-started {
+        padding: 15px 35px;
+    }
+
+    #section-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-2-div-1 h1{
+        font-size: 40px;
+       
+    }
+
+    
+
+
+
+    
+    /* This is the footer section */
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-input{
+        padding: 5px 15px;
+        border-radius: 20px
+    }
+
+    .down-copy {
+        display: none;
+        
+    }
+
+    .top-copy{
+        color: white;
+    }
+
 }
