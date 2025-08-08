@@ -27,6 +27,7 @@
 
 nav{
 /* border: 3px solid black; */
+
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -323,6 +324,10 @@ footer{
     scale: 1.1;
 }
 
+.down-copy{
+    font-size: 20px;
+}
+
 /* this belongs to active-states */
 
 .list li a:hover{
@@ -367,7 +372,7 @@ footer{
     }
 
      .buttons {
-        display: block;
+        display:block;
     }
 
     nav .nav-button {
@@ -426,6 +431,8 @@ footer{
         font-size: 40px;
        
     }
+
+
 
     
 
