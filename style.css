@@ -31,6 +31,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 
 
 
@@ -131,6 +135,10 @@ main{
 .overview-div1 h1{
     color: var(--Dark-Blue);
     font-size: 40px;
+}
+
+.overview-br{
+    display: none;
 }
 
 .overview-div1 p{
@@ -409,9 +417,6 @@ main{
     background-repeat: no-repeat;
     background-position: center  left 350px;
     background-size: 68% auto;
-    
-    
-    
 }
 
 
@@ -426,6 +431,10 @@ main{
 .sec h1{
     color: white;
     font-size: 28px;
+}
+
+.sec-div1-br{
+    display: none;
 }
 
 .sec button{
@@ -492,6 +501,14 @@ footer ul li a{
     font-size: 13px;
 }
 
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
 footer input{
     border-radius: 20px;
     padding: 10px 20px;
@@ -507,9 +524,224 @@ footer button{
     background-color: var(--Bright-Red);
 }
 
+.footer-div p{
+    color: grey;
+    font-size: 14px; 
+}
+
+.footer-content p{
+    display: none;
+}
+
 
 /* this is the responsive part */
 
 @media (max-width:480px){
+    nav ul{
+        display:none ;
+    }
+
+    nav{
+        margin: 0vh -12vh -70vh 0vh;
+        padding: 5vh 8vh 0vh 10vh;
+        gap: 0px;
+        height: 450px;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-content p{
+        font-size: 19px;
+        text-align: center;
+        color: grey;
+    }
+
+    .hero-img img{
+        width: 100%;
+    }
+
+    .overview{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+        gap: 5vh;
+    }
+
+    .overview-div1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+       
+       
+    } 
+
+    .overview-br2{
+        display: none;
+    }
+
+    .overview-br{
+        display: inline;
+    }
+
+    .overview-div1 h1{
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .overview-div1 p{
+        font-size: 19px;
+        text-align: center;
+        color: grey;
+    }
+
+    .overview-div2{
+        gap: 30px;
+        line-height: 2;
+    }
+
+    .inner-div1{
+        background-color: var(--Very-Pale-Red);
+        width: 120%;
+        
+    }
+    .inner-div3{
+        background-color: var(--Very-Pale-Red);
+        width: 120%;
+        
+    }
+    .inner-div5{
+        background-color: var(--Very-Pale-Red);
+        width: 120%;
+        
+    }
+
+    .inner-div2, .inner-div4, .inner-div6{
+        width:110%;
+
+    }
+
+    .inner-div2 p, .inner-div4 p, .inner-div6 p{
+        font-size: 15px;
+        text-align:start;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .inner-div6{
+        padding: 0px 0px 0px 0px;
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card-one, .card-two, .card-three, .card-four{
+        display: flex;
+        width: 139%;
+        padding-bottom: 20px;
+    }
+
+     .card-one p, .card-two p, .card-three p, .card-four p{
+        font-size: 15px;
+    }
+
+
+    .sec{
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 0vh 5vh 10vh;
+        gap:20vh;
+        background-image: url(resources/images/bg-simplify-section-mobile.svg);
+        background-position: left;
+        background-size: 35% 450px;
+        
+    }
+
+   
+
+    .sec-div1-br{
+        display: inline;
+    }
+
+    .sec-div1-br2{
+        display: none;
+    }
+
+    .sec-div2{
+        margin: 0vh 0vh 0vh -21vh;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 5vh 0vh 5vh 0vh;
+    }
+
+
+    .footer-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .footer-div p{
+        display: none;
+    }
+
+
+    .footer-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-content img{
+        width: 80%;
+    }
+
+    .footer-content p{
+        color: grey;
+        font-size: 14px; 
+        display: inline;
+    }
+
+    .bi-facebook, .bi-youtube, .bi-twitter-x , .bi-pinterest , .bi-instagram{
+    color: white;
+    font-size: 30px;
+    padding: 5px 10px;
     
+    }
+
+   
 }
