@@ -536,7 +536,7 @@ footer button{
 @media (max-width:480px){
 
     body{
-        overflow-x: hidden;
+        overflow: hidden;
     }
     nav ul{
         display:none ;
