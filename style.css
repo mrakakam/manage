@@ -534,15 +534,20 @@ footer button{
 /* this is the responsive part */
 
 @media (max-width:480px){
+
+    body{
+        overflow-x: hidden;
+    }
     nav ul{
         display:none ;
     }
 
     nav{
-        margin: 0vh -12vh -60vh 0vh;
+        margin: 0vh -12vh -70vh 0vh;
         padding: 5vh 8vh 0vh 10vh;
         gap: 0px;
         height: 450px;
+        overflow-x: hidden;
     }
 
     nav button{
@@ -555,6 +560,7 @@ footer button{
         align-items: center;
         gap: 0px;
         padding: 0px 0px 0px 20px;
+        overflow-x: hidden;
     }
 
     .hero-content{
