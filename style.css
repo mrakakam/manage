@@ -27,7 +27,7 @@
     --Font-size: 16px;
 }
 
-body{
+html,body{
     overflow-x: hidden;
     max-width: 100%;
 }
