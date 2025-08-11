@@ -29,6 +29,7 @@
 
 body{
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 
@@ -40,14 +41,14 @@ nav{
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
-    padding: 5vh 20vh 10vh 20vh;
-    background-image:url(resources/images/bg-tablet-pattern.svg) ;
-    background-repeat: no-repeat;
+    padding: 30px 40px 60px 50px;
+    /* background-image:url(resources/images/bg-tablet-pattern.svg) ; */
+    /* background-repeat: no-repeat;
     background-position: right -70px;
-    background-size:contain;
-    height:650px;
+    background-size:contain; */
+    /* height:650px;
     margin-bottom: -550px;
-    margin-right: -50px;
+    margin-right: -50px; */
 }
 
 nav ul{
@@ -407,23 +408,14 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60vh;
-    padding: 10vh 0vh 30vh 0vh;
+    gap: 300px;
+    padding: 40px 0px 30px 0px;
     background-color: var(--Bright-Red);
-    background-image: url(resources/images/bg-simplify-section-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: center  left 350px;
-    background-size: 68% auto;
 }
 
 
-.sec-div1{
-   margin: 0vh 0vh -10vh 0vh;
-}
 
-.sec-div2{
-    margin: 0vh 0vh 0vh -30vh;
-}
+
 
 .sec h1{
     color: white;
@@ -535,19 +527,22 @@ footer button{
 
 @media (max-width:480px){
 
+
+    
+
     body{
-        overflow-y: hidden;
+        width: 100%;
     }
+
+    
     nav ul{
         display:none ;
     }
 
     nav{
-        margin: 0vh -12vh -70vh 0vh;
-        padding: 5vh 8vh 0vh 10vh;
+        /* margin: 0vh -12vh -70vh 0vh; */
+        padding: 40px 0px 40px 40px;
         gap: 0px;
-        height: 450px;
-        overflow-x: hidden;
     }
 
     nav button{
@@ -560,7 +555,6 @@ footer button{
         align-items: center;
         gap: 0px;
         padding: 0px 0px 0px 20px;
-        overflow-x: hidden;
     }
 
     .hero-content{
@@ -678,12 +672,8 @@ footer button{
     .sec{
         display: flex;
         flex-direction: column;
-        padding: 5vh 0vh 5vh 10vh;
-        gap:20vh;
-        background-image: url(resources/images/bg-simplify-section-mobile.svg);
-        background-position: left;
-        background-size: 35% 450px;
-        
+        padding: 5px 0px 15px 10px;
+        gap:100px;
     }
 
    
