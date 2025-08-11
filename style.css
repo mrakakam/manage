@@ -532,6 +532,7 @@ footer button{
 
     body{
         width: 100%;
+        overflow-x: hidden;
     }
 
     
@@ -617,17 +618,17 @@ footer button{
 
     .inner-div1{
         background-color: var(--Very-Pale-Red);
-        width: 120%;
+        width: 100%;
         
     }
     .inner-div3{
         background-color: var(--Very-Pale-Red);
-        width: 120%;
+        width: 100%;
         
     }
     .inner-div5{
         background-color: var(--Very-Pale-Red);
-        width: 120%;
+        width: 100%;
         
     }
 
@@ -660,11 +661,15 @@ footer button{
 
     .card-one, .card-two, .card-three, .card-four{
         display: flex;
-        width: 139%;
+        width: 100%;
         padding-bottom: 20px;
     }
 
      .card-one p, .card-two p, .card-three p, .card-four p{
+        font-size: 15px;
+    }
+
+    .card-two-content{
         font-size: 15px;
     }
 
