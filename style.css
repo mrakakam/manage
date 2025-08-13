@@ -73,6 +73,16 @@ nav button{
     
 }
 
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+.bi-list,
+.bi-x-lg{
+    display: none;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -550,6 +560,20 @@ footer button{
         display: none;
     }
 
+    .menu-toggle{
+        display: block;
+        border: 2px solid var(--Dark-Blue);
+        border-radius: 20px;
+        padding: 5px 12px;
+                     
+     }
+
+    .bi-list{
+    display: block;
+     font-size: 24px;
+     color: var(--Dark-Blue);
+    }
+
     .hero{
         display: flex;
         flex-direction: column-reverse;
@@ -618,17 +642,17 @@ footer button{
 
     .inner-div1{
         background-color: var(--Very-Pale-Red);
-        width: 100%;
+        width: 110%;
         
     }
     .inner-div3{
         background-color: var(--Very-Pale-Red);
-        width: 100%;
+        width: 110%;
         
     }
     .inner-div5{
         background-color: var(--Very-Pale-Red);
-        width: 100%;
+        width: 110%;
         
     }
 
@@ -657,6 +681,14 @@ footer button{
         flex-direction: column;
         align-items: center;
         gap: 50px;
+    }
+
+    .card-one-img-holder{
+        padding-left: 50px;
+    }
+
+    .card-one-content h4{
+       padding-left: 25px;
     }
 
     .card-one, .card-two, .card-three, .card-four{
