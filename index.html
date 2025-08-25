@@ -19,7 +19,11 @@
 
             <img src="/resources/images/logo.svg" alt="">
 
-            <ul>
+            
+
+                <div>
+
+                    <ul>
 
                 <li>
                     <a href="https://www.facebook.com" target="_blank">pricing</a>
@@ -41,7 +45,11 @@
                     <a href="https://www.facebook.com" target="_blank">community</a>
                 </li>
 
-            </ul>
+                    </ul>
+
+                </div>
+
+            
 
             <button>Get Started</button>
 
@@ -335,7 +343,27 @@
                     </div>
 
                 </div>
+
+
                 
+                
+           </div>
+
+           <div>
+                <!-- this div contains the dots for the reviews section -->
+                 
+                <div class="dots">
+
+                     <span class="dot1" onclick="currentCard(1)"></span>
+
+                     <span class="dot2" onclick="currentCard(2)"></span>
+
+                     <span class="dot3" onclick="currentCard(3)"></span>
+
+                     <span class="dot4" onclick="currentCard(4)"></span>
+        
+                </div>
+
            </div>
 
            <button>Get Started</button>
@@ -448,17 +476,20 @@
             <div class="footer-div">
 
 
-                <div>
+                <div class="footer-inner-div">
 
-                     <input type="email" value="Update your email" >
+                    <form title="email" class="email-form" id="email-form">
 
-                     <button>Go</button>
+                        <input title="email input" type="text" id="email" placeholder="Updates in your inbox..."/>
+
+                        <button type="submit">GO</button>
+
+                        <small></small>
+
+                    </form>
 
                 </div>
 
-               
-
-                
                 <p>&copy; Copyright 2025. All rights Reserved</p>
 
                 
@@ -468,7 +499,8 @@
         </footer>
 
 
-    
 
+    <script src="manage-own.js"></script>
+    
 </body>
 </html>
