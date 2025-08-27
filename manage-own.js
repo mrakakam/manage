@@ -71,31 +71,36 @@ form.addEventListener('submit', function (e) {
 
 
 
-let cardIndex = 1; 
-showCards(cardIndex);
+let cardIndex = 1;
+
+function initSlider() {
+  // Check if screen is 480px or less
+  if (window.matchMedia("(max-width: 480px)").matches) {
+    showCards(cardIndex);
+  } else {
+    resetCards(); // optional: show all cards if >480px
+  }
+}
 
 // When user clicks a dot
 function currentCard(n) {
-  showCards(cardIndex = n);
+  if (window.matchMedia("(max-width: 480px)").matches) {
+    showCards(cardIndex = n);
+  }
 }
 
 function showCards(n) {
   const cards = document.querySelectorAll(".reviews-div > div"); 
   const dots = document.querySelectorAll(".dots span"); 
 
-  // Reset if user clicks beyond range
   if (n > cards.length) { cardIndex = 1; }
   if (n < 1) { cardIndex = cards.length; }
 
   // Hide all cards
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].style.display = "none";
-  }
+  cards.forEach(card => card.style.display = "none");
 
   // Remove active class from all dots
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
+  dots.forEach(dot => dot.classList.remove("active"));
 
   // Show the current card
   cards[cardIndex - 1].style.display = "flex";
@@ -104,9 +109,19 @@ function showCards(n) {
   dots[cardIndex - 1].classList.add("active");
 }
 
+// Reset (optional for >480px)
+function resetCards() {
+  const cards = document.querySelectorAll(".reviews-div > div"); 
+  const dots = document.querySelectorAll(".dots span"); 
+  cards.forEach(card => card.style.display = "flex");
+  dots.forEach(dot => dot.classList.remove("active"));
+}
 
+// Run once on load
+initSlider();
 
-
+// Run again on resize (responsive)
+window.addEventListener("resize", initSlider);
 
 
 
